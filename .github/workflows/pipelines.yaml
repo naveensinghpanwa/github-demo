@@ -9,7 +9,7 @@ env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
   GKE_CLUSTER: github-gke
   GKE_ZONE: us-central1-c
-  DEPLOYMENT_NAME: github-dummy-service-deployment
+  DEPLOYMENT_NAME: github-actions-gke
   IMAGE: github-dummy-service-image
   TAG: 1.0.0
 
