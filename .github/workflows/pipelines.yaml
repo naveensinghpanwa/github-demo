@@ -47,7 +47,7 @@ jobs:
       - name: Get GKE Credentials
         run: |-
           export CLOUDSDK_CONTAINER_USE_CLIENT_CERTIFICATE=True
-          gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE"
+          gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE" --project githubdemo-342209
 
       - name: Build Docker Image
         run: |-
